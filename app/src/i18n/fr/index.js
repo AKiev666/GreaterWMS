@@ -2,8 +2,8 @@
 // so you can safely delete all default props below
 
 export default {
-  failed: 'Action failed',
-  success: 'Action was successful',
+  failed: 'Échec de l'action',
+  success: 'L'action a réussi',
   index: {
     only_id: 'Code logiciel',
     only_title: 'Besoin de vérifier le code logiciel',
@@ -20,7 +20,7 @@ export default {
     api: 'Documentation API',
     translate: 'Changer de langue',
     unread: 'Messages non lus',
-    login: 'connexion',
+    login: 'Connexion',
     register: "S'inscrire",
     login_tip: "Entrez votre OPENID et votre nom d'utilisateur",
     register_tip: "S'inscrire en tant qu'administrateur",
@@ -39,11 +39,11 @@ export default {
     previous: 'Page précédente',
     next: 'Page suivante',
     admin_name: 'Administrateur',
-    password: 'le mot de passe',
+    password: 'Mot de passe',
     confirm_password: 'Confirmez le mot de passe',
     staff_name: "Nom d'utilisateur",
     cancel: 'Annuler',
-    close: 'Fermeture',
+    close: 'Fermer',
     submit: 'Nous faire parvenir',
     download: 'Télécharger',
     updatetitle: 'Mise à niveau prête',
@@ -62,13 +62,13 @@ export default {
     dashboard: 'Tableau de bord',
     inbound: 'Entrant',
     outbound: 'Sortant',
-    stock: 'Inventaire',
-    finance: 'Finances',
+    stock: 'Stock',
+    finance: 'Finance',
     goods: 'Liste Marchandises',
     baseinfo: 'Informations de base',
     warehouse: 'Entrepôt',
     staff: 'Personnel',
-    driver: 'Chauffeur',
+    driver: 'Conducteurs',
     customerdn: 'DN client',
     supplierasn: 'Fournisseur ASN',
     uploadcenter: 'Centre de téléchargement',
@@ -135,11 +135,11 @@ export default {
     supplier: 'Fournisseur',
     customer: 'Client',
     view_company: {
-      company_name: 'Nom de la compagnie',
-      company_city: 'Lieu de la ville',
-      company_address: 'adresse',
+      company_name: 'Nom de l'entreprise',
+      company_city: 'Ville',
+      company_address: 'Adresse',
       company_contact: 'Informations de contact',
-      company_manager: 'Principal',
+      company_manager: 'Responsable',
       error1: "Veuillez saisir le nom de l'entreprise",
       error2: "Veuillez indiquer la ville où se situe l'entreprise",
       error3: "Veuillez saisir l'adresse de l'entreprise",
@@ -148,10 +148,10 @@ export default {
     },
     view_supplier: {
       supplier_name: 'Nom du fournisseur',
-      supplier_city: 'Lieu de la ville',
-      supplier_address: 'adresse',
+      supplier_city: 'Ville',
+      supplier_address: 'Adresse',
       supplier_contact: 'Informations de contact',
-      supplier_manager: 'principal',
+      supplier_manager: 'Responsable',
       supplier_level: 'Niveau fournisseur',
       error1: 'Veuillez entrer le nom du fournisseur',
       error2: 'Veuillez entrer la ville où se trouve le fournisseur',
@@ -162,10 +162,10 @@ export default {
     },
     view_customer: {
       customer_name: 'Nom du client',
-      customer_city: 'Lieu de la ville',
+      customer_city: 'Ville',
       customer_address: 'Adresse',
       customer_contact: 'Informations de contact',
-      customer_manager: 'Principal',
+      customer_manager: 'Responsable',
       customer_level: 'Niveau client',
       error1: 'Veuillez saisir le nom du client',
       error2: 'Veuillez entrer la ville où se trouve le client',
@@ -178,7 +178,7 @@ export default {
   dashboards: {
     outbound_statements: 'Rapport sortant',
     inbound_statements: 'Rapport de réception',
-    inbound_and_outbound_statements: 'Procès-verbal de réception et de livraison',
+    inbound_and_outbound_statements: 'Relevés d'entrantré et de sortie',
     total_sales: 'Ventes totales',
     category_sales_ranking: 'Classement des ventes par catégorie',
     sales_volume_ranking: 'Classement des ventes',
@@ -205,7 +205,7 @@ export default {
     view_capital: {
       capital_name: "Nom de l'actif fixe",
       capital_qty: 'Quantité',
-      capital_cost: 'Quantité',
+      capital_cost: 'coût',
       error1: "Veuillez saisir le nom de l'actif",
       error2: "Le nombre d'actifs doit être supérieur à 0",
       error3: "Le montant de l'actif doit être supérieur à 0"
@@ -368,7 +368,7 @@ export default {
     pickinglist: 'Détails de la liste de sélection',
     shippedstock: 'Expédié',
     received: 'Ont été reçus',
-    pod: 'Signer le reçu',
+    pod: 'Preuve de livraison ',
     view_dn: {
       dn_code: "Numéro d'expédition",
       dn_status: 'État de la facture',
@@ -391,7 +391,7 @@ export default {
       staff_type: "Type d'employé",
       error1: "Veuillez entrer le nom de l'employé",
       error2: "Veuillez entrer le type d'employé",
-      lock: 'Verrouillage',
+      lock: 'Verrouiller',
       unlock: 'Ouvrir'
     }
   },
@@ -409,7 +409,7 @@ export default {
       ordered_stock: 'Nombre de commandes passées',
       inspect_stock: 'Quantité de contrôle qualité',
       hold_stock: 'Quantité bloquée',
-      damage_stock: 'Quantité de rupture',
+      damage_stock: 'Stock endommagé',
       asn_stock: "Nombre d'avis d'arrivée",
       dn_stock: 'Quantité de la facture',
       pre_load_stock: 'Quantité à décharger',
@@ -418,9 +418,9 @@ export default {
       pick_stock: 'Quantité à cueillir',
       picked_stock: 'Quantité choisie',
       back_order_stock: 'Montant des marchandises dues',
-      on_hand_inventory: 'actions existantes',
-      history_inventory: "En stock à l'époque",
-      physical_inventory: 'Compter la quantité',
+      on_hand_inventory: 'Stock disponible',
+      history_inventory: 'Historique du stock',
+      physical_inventory: 'Inventaire physique',
       difference: 'Différence',
       cyclecount: 'Inventaire dynamique',
       recyclecount: 'Réinitialiser',
@@ -451,10 +451,10 @@ export default {
     },
     view_warehouse: {
       warehouse_name: "Nom de l'entrepôt",
-      warehouse_city: 'Lieu de la ville',
+      warehouse_city: 'Ville',
       warehouse_address: 'Adresse',
       warehouse_contact: 'Informations de contact',
-      warehouse_manager: 'Principal'
+      warehouse_manager: 'Responsable'
     },
     view_binset: {
       bin_name: 'Nom de la localisation',
@@ -496,7 +496,7 @@ export default {
     scan_goods_label: 'Étiquette du produit',
     scan_goods_label_error: "L'étiquette de l'article n'existe pas",
     view_binmove: {
-      old_bin_name: "Nom de l'emplacement d'origine",
+      old_bin_name: "Ancien nom de l'emplacement",
       new_bin_name: "Nouveau nom de l'emplacement",
       qty: "Nombre d'entrepôts déplacés",
       qty_error: 'La quantité à déplacer ne doit pas être supérieure à la quantité existante'
@@ -513,7 +513,7 @@ export default {
     },
     view_shipping: {
       shipping_code: "Numéro d'expédition",
-      driver_info: 'Informations sur le conducteur',
+      driver_info: 'Informations du conducteur',
       license_plate_number: "Plaque d'immatriculation",
       name: 'Nom',
       contact_info: 'Informations de contact'
@@ -529,7 +529,7 @@ export default {
     unknow_error: 'Erreur inconnue',
     network_error: 'Anomalie de réseau',
     nullerror: '',
-    cyclecounterror: 'pas de données',
+    cyclecounterror: 'Pas de données',
     userererror: "Le nom d'utilisateur existe déjà",
     capitalerror: "Le nom de l'actif fixe existe déjà",
     valuenullerror: 'Veuillez remplir les données complètes',
@@ -539,7 +539,7 @@ export default {
       goods_uniterror: "L'unité de commodité existe déjà",
       goods_classerror: "La catégorie d'article existe déjà",
       goods_colorerror: "La couleur de l'article existe déjà",
-      goods_branderror: 'La marque de produits de base existe déjà',
+      goods_branderror: 'La marque de produits existe déjà',
       goods_shapeerror: "La forme de l'élément existe déjà",
       goods_specserror: 'La spécification du produit existe déjà',
       goods_originerror: "L'origine du produit existe déjà"
@@ -550,12 +550,12 @@ export default {
       suppliererror: 'Le nom du fournisseur existe déjà'
     },
     warehouseerror: {
-      binseterror: "Le nom de l'emplacement existe déjà",
+      binseterror: 'L'emplacement existe déjà',
       binsizeerror: 'La taille du stock existe déjà'
     },
     mobile_userlogin: {
-      notice1: "Veuillez saisir votre nom d'administrateur",
-      notice2: 'Veuillez saisir votre mot de passe administrateur',
+      notice1: "Veuillez saisir le nom d'administrateur",
+      notice2: 'Veuillez saisir le mot de passe administrateur',
       notice3: 'Veuillez saisir le nom de votre personnel',
       notice4: 'Veuillez saisir votre code de vérification du personnel',
       notice5: 'Veuillez saisir votre Openid dans le serveur de paramètres',
